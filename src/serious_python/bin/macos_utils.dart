@@ -80,7 +80,7 @@ Future<void> mergeDirs(Directory arm64Dir, Directory x86_64Dir,
       } else {
         // Copy non-.so files
         if (verbose) {
-          stdout.writeln('Copying ${item.path}...');
+          stdout.writeln('Copying ${item.path} to $targetItemPath');
         }
         await item.copy(targetItemPath);
       }
